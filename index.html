@@ -1,40 +1,114 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+	<title>Pattern Library</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+	<link rel="stylesheet" href="dist/theme/custom.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h3 style="margin-bottom: 0;">Patterson<span
+						style="font-size: 1rem; vertical-align: super;">&reg;</span>'s</h3>
+				<h1>Pattern Library</h1>
+				<p class="fragment handwriting">The learning experience...</p>
+
+				<aside class="notes">
+					How the experience with struggles have shaped the pattern library as it is
+				</aside>
+			</section>
+
+			<section>
+				<h3>What is the Pattern Library?</h3>
+				<p>Mechanism to apply brand standards across many Patterson web platforms.</p>
+
+				<aside class="notes">
+					different sites managed by different entities
+				</aside>
+			</section>
+
+			<section>
+				<h3>What is it not?</h3>
+				<p class="fragment">A CSS framework</p>
+				<p class="fragment">JavaScript based component library</p>
+				<p class="fragment">Perfect</p>
+
+				<aside class="notes">
+					CSS Framework: limit to open-endedness, more of a toolkit to provice pieces
+					<br>
+					JS: too much base hard to implement with framework, with framework can't work for external entitis
+					<br>
+					Perfect: ...duh :)
+				</aside>
+			</section>
+
+			<!-- Site Examples -->
+			<section data-background-image="/dist/images/pattersondental-old.png" data-background-position="top">
+			</section>
+			<section data-background-image="/dist/images/pattersonvet-old.png" data-background-position="top">
+			</section>
+			<section data-background-image="/dist/images/animalhealth-old.png" data-background-position="top">
+			</section>
+
+			<section>
+				<img src="/dist/images/magicwond.gif" alt="">
+			</section>
+
+			<section data-background-image="/dist/images/pattersondental-present.png" data-background-position="top">
+			</section>
+			<section data-background-image="/dist/images/pattersonvet-present.png" data-background-position="top">
+			</section>
+			<section data-background-image="/dist/images/animalhealth-present.png" data-background-position="top">
+				<aside class="notes">
+					No js, no exposure to development (reason for no JS framework)
+				</aside>
+			</section>
+			<!-- /Site Examples -->
+
+			<section>
+				<h3>Struggles</h3>
+				<p class="fragment">How much JavaScript?</p>
+				<p class="fragment">Working in parallel with design</p>
+				<p class="fragment">Implementation skill sets</p>
+				<p class="fragment">More...</p>
+
+				<aside class="notes">
+					focus on semi-unique struggles, not the standard ones
+				</aside>
+			</section>
+
+			<section data-background-iframe="https://hakim.se" data-background-interactive></section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
 </html>
