@@ -1,134 +1,176 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Pattern Library</title>
 
-	<title>Pattern Library</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="dist/theme/custom.css" id="theme" />
 
-	<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="dist/reset.css">
-	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
-	<link rel="stylesheet" href="dist/theme/custom.css" id="theme">
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
 
-	<!-- Theme used for syntax highlighted code -->
-	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-</head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h3 style="margin-bottom: 0">Patterson's</h3>
+          <h1>Pattern Library</h1>
+          <p class="fragment handwriting">Some of the struggles ...</p>
 
-<body>
-	<div class="reveal">
-		<div class="slides">
-			<section>
-				<h3 style="margin-bottom: 0;">Patterson's</h3>
-				<h1>Pattern Library</h1>
-				<p class="fragment handwriting">Some of the struggles ...</p>
+          <aside class="notes">
+            How struggles have shaped the pattern library as it is
+          </aside>
+        </section>
 
-				<aside class="notes">
-					How struggles have shaped the pattern library as it is
-				</aside>
-			</section>
+        <section
+          data-background-iframe="http://ux.mailchimp.com/patterns/color"
+          data-background-interactive
+        ></section>
 
-			<section>
-				<h3>What is the Pattern Library?</h3>
-				<p>Mechanism to apply brand standards across many Patterson web platforms built on-top of different technologies.</p>
+        <section>
+          <h3>What is the Pattern Library?</h3>
+          <p>
+            Mechanism to apply brand standards across many Patterson web
+            platforms built on-top of different technologies.
+          </p>
 
-				<aside class="notes">
-					different sites managed by different entities
-				</aside>
-			</section>
+          <aside class="notes">
+            different sites managed by different entities
+          </aside>
+        </section>
 
-			<!-- Site Examples -->
-			<section data-background-image="/dist/images/pattersondental-old.png" data-background-position="top">
-			</section>
-			<section data-background-image="/dist/images/pattersonvet-old.png" data-background-position="top">
-			</section>
-			<section data-background-image="/dist/images/animalhealth-old.png" data-background-position="top">
-			</section>
+        <section style="text-align: center">
+          <img src="/dist/images/Untitled Diagram (1).png" width="60%" />
+        </section>
 
-			<section>
-				<img src="/dist/images/magicwond.gif" alt="">
-			</section>
+        <!-- Site Examples -->
+        <section
+          data-background-image="/dist/images/pattersondental-old.png"
+          data-background-position="top"
+        ></section>
+        <section
+          data-background-image="/dist/images/pattersonvet-old.png"
+          data-background-position="top"
+        ></section>
+        <section
+          data-background-image="/dist/images/animalhealth-old.png"
+          data-background-position="top"
+        ></section>
 
-			<section data-background-image="/dist/images/pattersondental-present.png" data-background-position="top">
-			</section>
-			<section data-background-image="/dist/images/pattersonvet-present.png" data-background-position="top">
-			</section>
-			<section data-background-image="/dist/images/animalhealth-present.png" data-background-position="top">
-				<aside class="notes">
-					No js, no exposure to development (reason for no JS framework)
-				</aside>
-			</section>
-			<!-- /Site Examples -->
+        <section>
+          <img src="/dist/images/magicwond.gif" alt="" />
+        </section>
 
-			<section style="text-align: center;">
-				<img src="/dist/images/Untitled Diagram (1).png" width="60%">
-			</section>
+        <section
+          data-background-image="/dist/images/pattersondental-present.png"
+          data-background-position="top"
+        ></section>
+        <section
+          data-background-image="/dist/images/pattersonvet-present.png"
+          data-background-position="top"
+        ></section>
+        <section
+          data-background-image="/dist/images/animalhealth-present.png"
+          data-background-position="top"
+        >
+          <aside class="notes">
+            No js, no exposure to development (reason for no JS framework)
+          </aside>
+        </section>
+        <!-- /Site Examples -->
 
-			<section>
-				<h3>Some of the struggles...</h3>
-				<p class="fragment">How much JavaScript/functionality?</p>
-				<p class="fragment">How open-ended should the CSS class structure be? All the utilities?</p>
-				<p class="fragment">Non-FED "audience"</p>
-				<p class="fragment">Working in parallel with design (very common one I'd imagine)</p>
+        <section>
+          <h3>Some of the struggles...</h3>
+          <p class="fragment">How much JavaScript/functionality?</p>
+          <p class="fragment">
+            How open-ended should the CSS class structure be? All the utilities?
+          </p>
+          <p class="fragment">Non-FED "audience"</p>
+          <p class="fragment">
+            Working in parallel with design (very common one I'd imagine)
+          </p>
 
-				<aside class="notes">
-					<strong>js:</strong> enough to work out box, not too much to hinder simple implementations (Vue)
-					<br>
-					<strong>css:</strong> to promote brand consistencies, pressue from marketing
-					<br>
-					<strong>skills:</strong> hand in hand with open-endedness
-					<br>
-					<strong>design:</strong> not having access to complete examples, guessing future states
-				</aside>
-			</section>
+          <aside class="notes">
+            <strong>js:</strong> enough to work out box, not too much to hinder
+            simple implementations (Vue)
+            <br />
+            <strong>css:</strong> to promote brand consistencies, pressue from
+            marketing
+            <br />
+            <strong>skills:</strong> hand in hand with open-endedness
+            <br />
+            <strong>design:</strong> not having access to complete examples,
+            guessing future states
+          </aside>
+        </section>
 
-			<section
-				data-background-iframe="https://www.pattersondental.com/services/office-design/Inspiration"
-				data-background-interactive>
+        <section
+          data-background-iframe="https://www.pattersondental.com/services/office-design/Inspiration"
+          data-background-interactive
+        >
+          <aside class="notes">
+            <p>Lightbox/Modal</p>
+            <ul>
+              <li>
+                js: provide out the box implementation for quick turn-around on
+                ecomm, ties markup to this library
+              </li>
+              <li>
+                css: making CSS work for "all" modal js libraries as they
+                require specific markup
+              </li>
+            </ul>
+          </aside>
+        </section>
 
-				<aside class="notes">
-					<p>Lightbox/Modal</p>
-					<ul>
-						<li>js: provide out the box implementation for quick turn-around on ecomm, ties markup to this
-							library</li>
-						<li>css: making CSS work for "all" modal js libraries as they require specific markup</li>
-					</ul>
-				</aside>
-			</section>
+        <section
+          data-background-iframe="https://www.pattersondental.com/support"
+          data-background-interactive
+        >
+          <aside class="notes">
+            <p>Layouts</p>
+            <ul>
+              <li>
+                audience: quick turnaroung, out of the box solution that took
+                care of responsive layouts to design specs
+              </li>
+            </ul>
+          </aside>
+        </section>
+      </div>
+    </div>
 
-			<section
-				data-background-iframe="https://www.pattersondental.com/support"
-				data-background-interactive>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
 
-				<aside class="notes">
-					<p>Layouts</p>
-					<ul>
-						<li>
-							audience: quick turnaroung, out of the box solution that took care of responsive layouts to design specs
-						</li>
-					</ul>
-				</aside>
-			</section>
-		</div>
-	</div>
-
-	<script src="dist/reveal.js"></script>
-	<script src="plugin/notes/notes.js"></script>
-	<script src="plugin/markdown/markdown.js"></script>
-	<script src="plugin/highlight/highlight.js"></script>
-	<script>
-		// More info about initialization & config:
-		// - https://revealjs.com/initialization/
-		// - https://revealjs.com/config/
-		Reveal.initialize({
-			hash: true,
-
-			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
-		});
-	</script>
-</body>
-
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
